@@ -1,7 +1,49 @@
-<mat-card>Welcome to Workout Tracker! Begin a workout or first create a profile to utilize all features!</mat-card>
+<mat-card><img mat-card-image src="../../../assets/smol_banner.png" alt="OBGYM" /></mat-card>
+
+<mat-card>
+  <mat-grid-list cols="6">
+    <mat-grid-tile [colspan]="5" [rowspan]="4">
+      <mat-tab-group>
+
+        <mat-tab label="Home">
+          <ng-template matTabContent>
+            <!-- Content 1 - Loaded: {{getTimeLoaded(1) | date:'medium'}} -->
+            <app-tabs-home></app-tabs-home>
+          </ng-template>
+        </mat-tab>
+
+        <mat-tab label="Equipment">
+          <ng-template matTabContent>
+            <!-- Content 2 - Loaded: {{getTimeLoaded(2) | date:'medium'}} -->
+            <app-tabs-equipment></app-tabs-equipment>
+          </ng-template>
+
+        </mat-tab>
+
+        <mat-tab label="About">
+          <ng-template matTabContent>
+            <!-- Content 3 - Loaded: {{getTimeLoaded(3) | date:'medium'}} -->
+            <app-tabs-about></app-tabs-about>
+          </ng-template>
+
+        </mat-tab>
+        <mat-tab label="Directions">
+          <ng-template matTabContent>
+            <!-- Content 4 - Loaded: {{getTimeLoaded(4) | date:'medium'}} -->
+            <app-tabs-directions></app-tabs-directions>
+          </ng-template>
+
+        </mat-tab>
+      </mat-tab-group>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="4">
+      <app-side-info></app-side-info>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>
 
 
-<mat-accordion>
+<!-- <mat-accordion>
   <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
     <mat-expansion-panel-header>
       <mat-panel-title>
@@ -107,4 +149,4 @@
 
     <app-work-out-programs></app-work-out-programs>
   </mat-expansion-panel>
-</mat-accordion>
+</mat-accordion> -->

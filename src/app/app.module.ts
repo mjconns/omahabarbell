@@ -18,6 +18,11 @@ import { PlaceHolderComponent } from './component/place-holder/place-holder.comp
 import { ToolbarComponent } from './component/toolbar/toolbar.component';
 import { NavbarComponent } from './component/navbar/navbar.component';
 import { WorkOutProgramsComponent } from './component/work-out-programs/work-out-programs.component';
+import { TabsHomeComponent } from './component/tabs-home/tabs-home.component';
+import { TabsEquipmentComponent } from './component/tabs-equipment/tabs-equipment.component';
+import { TabsAboutComponent } from './component/tabs-about/tabs-about.component';
+import { TabsDirectionsComponent } from './component/tabs-directions/tabs-directions.component';
+import { SideInfoComponent } from './component/side-info/side-info.component';
 
 //Services
 
@@ -30,7 +35,12 @@ import { WorkOutProgramsComponent } from './component/work-out-programs/work-out
     ToolbarComponent,
     NavbarComponent,
     HomeTSComponent,
-    WorkOutProgramsComponent
+    WorkOutProgramsComponent,
+    TabsHomeComponent,
+    TabsEquipmentComponent,
+    TabsAboutComponent,
+    TabsDirectionsComponent,
+    SideInfoComponent
   ],
 
   imports: [

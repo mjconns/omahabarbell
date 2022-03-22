@@ -1,4 +1,8 @@
-.mat-form-field+.mat-form-field,
+.mat-card {
+  padding: 15px 15px 0px 15px;
+}
+
+.mat-form-field + .mat-form-field,
 #firstOfItsName {
   margin-left: 8px;
 }
@@ -20,4 +24,18 @@
 .mat-card {
   margin-bottom: 5px;
   background-color: rgb(239, 240, 241);
+}
+
+::ng-deep mat-card .mat-grid-tile .mat-figure {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  align-items: initial !important;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }

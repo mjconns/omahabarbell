@@ -2,20 +2,20 @@
   <mat-icon>menu</mat-icon>
 </button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>
-    <mat-icon>person</mat-icon>
-    <span>Profile</span>
+  <button mat-menu-item routerLink="/home">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon>leaderboard</mat-icon>
-    <span>Stats</span>
+  <button mat-menu-item routerLink="/equipment">
+    <mat-icon>fact_check</mat-icon>
+    <span>Equipment</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon>history_edu</mat-icon>
-    <span>History</span>
+  <button mat-menu-item routerLink="/about">
+    <mat-icon>groups</mat-icon>
+    <span>About</span>
   </button>
-  <button mat-menu-item>
-    <mat-icon>line_style</mat-icon>
-    <span>Exercises</span>
+  <button mat-menu-item routerLink="/directions">
+    <mat-icon>map</mat-icon>
+    <span>Directions</span>
   </button>
 </mat-menu>
